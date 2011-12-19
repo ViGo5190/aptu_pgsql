@@ -23,7 +23,7 @@ create table "limit"(
 	id serial primary key,
 	card_id integer references "card"(id)  on delete no action,
 	limit_type_id integer references "limit_type"(id)  on delete no action,
-	value money,
+	value money
 	);
 
 

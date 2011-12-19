@@ -3,7 +3,7 @@
 	desk varchar(80) not null unique
 	);
 	
-create table "opearation_type"(
+create table "operation_type"(
 	id serial primary key,
 	desk varchar(80) not null unique
 	);

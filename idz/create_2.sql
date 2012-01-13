@@ -35,6 +35,7 @@ create table "operation"(
 	id serial primary key,
 	atm_id integer not null references "atm"(id)  on delete no action,
 	card_id integer references "card"(id)  on delete no action,
+	operation_type_id integer references "operation_type"(id)  on delete no action,
 	bill money not null,
 	datatime timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
 	start_time time without time zone,
